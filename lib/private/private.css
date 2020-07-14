@@ -3,3 +3,15 @@
 	position: relative;
 	margin-bottom: 20px;
 }
+#left-part{
+	float: left;
+	width: 25%;
+	background-color: gray;
+	margin-top: 20px;
+}
+#right-part{
+	float: right;
+	width: 75%;
+	background-color: dimgrey;
+	margin-top: 20px;
+}
