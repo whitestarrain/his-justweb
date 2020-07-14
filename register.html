@@ -14,12 +14,7 @@
 		<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
 		<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
 
-		<style>
-			.inputgroup{
-				height: 50px;
-				position: relative;
-			}
-		</style>
+		<link rel="stylesheet" type="text/css" href="./lib/private/private.css" />
 	</head>
 	<body>
 		<div style="position: relative;">
@@ -33,13 +28,15 @@
 		</div>
 		<form action="">
 			<div class="form-inline" style="margin-top: 20px;margin-left: 10px;margin-bottom: 20px;">
-				<div class="form-group">
-					<label for="exampleInputName2">发票号：</label>
-					<input type="text" class="form-control" id="exampleInputName2" placeholder="发票号">
+				<div class="inputgroup">
+					<div class="form-group col-md-3">
+						<label for="exampleInputName2">发票号：</label>
+						<input type="text" class="form-control" id="exampleInputName2" placeholder="发票号">
+					</div>
+					<button type="submit" class="btn btn-primary">挂号</button>
+					<button class="btn btn-primary">清空</button>
 				</div>
-				<button type="submit" class="btn btn-primary">挂号</button>
-				<button class="btn btn-primary">清空</button>
-				<h4>挂号信息</h4>
+				<h4 style="margin-left: 1.2%;">挂号信息:</h4>
 				<div class="inputgroup">
 					<div class="form-group col-md-3">
 						<label for="exampleInputName1">病历号：</label>
@@ -65,9 +62,9 @@
 					</div>
 					<div class="form-group col-md-3">
 						<label for="exampleInputName7">出生日期：</label>
-						<input type="date" class="form-control" id="exampleInputName7" >
+						<input type="date" class="form-control" id="exampleInputName7">
 					</div>
-					
+
 					<div class="form-group col-md-3">
 						<label for="exampleInputName8">看诊日期：</label>
 						<input type="date" class="form-control" id="exampleInputName8">
@@ -83,7 +80,7 @@
 				<div class="inputgroup">
 					<div class="form-group col-md-3">
 						<label for="exampleInputName10">结算类别：</label>
-						<select class="form-control" id="exampleInputName10" >
+						<select class="form-control" id="exampleInputName10">
 							<option>自费</option>
 							<option>医疗保险</option>
 						</select>

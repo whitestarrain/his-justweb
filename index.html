@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-		<title>Bootstrap 101 Template</title>
+		<title>云医院管理系统</title>
 
 		<!-- Bootstrap -->
 
@@ -69,7 +69,7 @@
 					<dd>
 						<ul>
 							<li><a data-href="member-add.html" data-title="现场挂号" href="javascript:toRegister()">现场挂号</a></li>
-							<li><a data-href="article-list.html" data-title="退号" href="javascript:void(0)">退号</a></li>
+							<li><a data-href="article-list.html" data-title="退号" href="javascript:toQuitRegister()">退号</a></li>
 							<li><a data-href="article-list.html" data-title="收费" href="javascript:void(0)">收费</a></li>
 							<li><a data-href="article-list.html" data-title="退费" href="javascript:void(0)">退费</a></li>
 							<li><a data-href="article-list.html" data-title="发票补打" href="javascript:void(0)">发票补打</a></li>
@@ -141,7 +141,7 @@
 			</div>
 		</aside>
 		<div style="height: 730px;width: 86%;position: relative;left: 14%;">
-			<iframe id="rightcontent" src="register.html" height="100%" width="100%" style="border: none;">
+			<iframe id="rightcontent" src="./quitRegister.html" height="100%" width="100%" style="border: none;">
 
 			</iframe>
 		</div>
@@ -159,7 +159,11 @@
 			$("#rightcontent").prop({
 				src: "./register.html"
 			})
-			console.log("toregister")
+		}
+		function toQuitRegister(){
+			$("#rightcontent").prop({
+				src: "./quitRegister.html"
+			})
 		}
 		$(function() {
 			
