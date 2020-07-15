@@ -13,6 +13,7 @@
 		<link rel="stylesheet" type="text/css" href="./lib/private/private.css" />
 		<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
 		<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="./lib/private/public.css">
 
 	</head>
 	<body>
@@ -43,7 +44,7 @@
 					</form>
 				</div>
 				<div id="left-down-part">
-					<p class="bg-primary">未诊患者</p>
+					<p class="bg-primary">未诊患者:</p>
 					<table class="table table-hover">
 						<tr>
 							<td>1111</td>
@@ -66,7 +67,7 @@
 							<td>1111</td>
 						</tr>
 					</table>
-					<p class="bg-primary">已诊患者</p>
+					<p class="bg-primary">已诊患者:</p>
 					<table class="table table-hover">
 						<tr>
 							<td>2222</td>
@@ -91,10 +92,18 @@
 					</table>
 				</div>
 			</div>
-			<div id="right-part">
+			<div id="right-part" class="border-line" style="margin-right: 5px;">
+				<div class="container-fluid" style="padding: 0px;">
+					<div class="col-md-2" style="padding: 0;">
+						<button class="btn btn-primary">
+							隐藏患者栏
+						</button>
+					</div>
+					<span class="text-info" style="font-size: 18px; line-height: 33px;">患者姓名：XXX</span>
+				</div>
 				<div id="right-up-part">
 					<ul class="nav nav-tabs">
-						<li role="presentation" class="active"><a href="#">病历首页</a></li>
+						<li role="presentation" class="active"><a href="#" style="padding-right: 18px;padding-left: 19px;">病历首页</a></li>
 						<li role="presentation"><a href="#">检查申请</a></li>
 						<li role="presentation"><a href="#">检验申请*</a></li>
 						<li role="presentation"><a href="#">门诊确诊*</a></li>
@@ -105,8 +114,8 @@
 					</ul>
 				</div>
 
-				<div id="right-down-part">
-					
+				<div id="right-down-part" style="height: 590px;">
+					<iframe src="MedicalRecord.html" style="height: 100%; width: 100%; border: none;"></iframe>
 				</div>
 			</div>
 

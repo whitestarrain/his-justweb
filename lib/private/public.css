@@ -1,0 +1,20 @@
+.border-line{
+	border-style: solid;
+	border-color: #ddd;
+	border-width: 1px;
+	border-radius: 4px 4px 4px 4px;
+	font-size: 15px;
+	line-height: 25px;
+}
+.highlight{
+	background-color: #F7F7F9;
+	border-radius: 3px 3px 3px 3px;
+	overflow: auto;
+}
+
+.shadow{
+	box-shadow: 1px 1px 5px #201f1f71;
+}
+.padding-medium{
+	padding: 10px;
+}

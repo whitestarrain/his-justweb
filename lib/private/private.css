@@ -5,7 +5,6 @@
 }
 
 #diagnose-window {
-	perspective: 1000px;
 	margin-left: 1%;
 	overflow: auto;
 }
@@ -25,6 +24,7 @@
 	float: right;
 	width: 74%;
 	margin-top: 20px;
+	overflow: auto;
 }
 
 #left-up-part {
@@ -34,9 +34,8 @@
 }
 
 #left-up-part>a {
-	transform: translateZ(-50px);
 	position: absolute;
-	right: 15px;
+	right: -3px;
 }
 #left-middle-part{
 	margin-right: 5px;
