@@ -33,9 +33,9 @@
 	line-height: 35px;
 }
 
-#left-up-part>a {
+#left-up-part a {
 	position: absolute;
-	right: -3px;
+	right: 7px;
 }
 #left-middle-part{
 	margin-right: 5px;

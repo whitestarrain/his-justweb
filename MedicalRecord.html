@@ -261,22 +261,27 @@
 		</div>
 	</body>
 
-	<!-- 暗幕 -->
-	<div id="dark-full" class="full-dark" style="display: none;" ></div>
 
 	<!-- 弹出疾病选择框 -->
 	<div
 		id="diease"
 		class="center-center shadow border-line"
-		style="width: 800px; height: 500px; background-color:#FFFFFF;display: none;padding: 30px 20px 0px;">
-		<form class="form-inline" style="width: 70%; position: relative; left: 50%;transform: translate(-50%,0);margin-bottom: 20px;">
+		style="width: 800px; height: 500px; background-color:#FFFFFF;display:
+		none;padding: 30px 20px 0px;">
+		<form class="form-inline" style="width: 70%; position: relative; left:
+			50%;transform: translate(-50%,0);margin-bottom: 20px;">
 			<div class="form-group">
-				<input type="text" class="form-control" id="inputPassword2" placeholder="疾病种类">
+				<input type="text" class="form-control" id="inputPassword2"
+					placeholder="疾病种类">
 			</div>
 			<div class="form-group">
-				<input type="text" class="form-control " id="inputPassword3" placeholder="疾病名称">
+				
+				<input type="text" class="form-control" id="inputPassword3"
+					placeholder="疾病名称">
+
 			</div>
-			<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+			<button type="submit" class="btn btn-default"><span class="glyphicon
+					glyphicon-search"></span></button>
 		</form>
 		<div class="container-fluid">
 			<table class="table table-hover text-center">
@@ -343,9 +348,9 @@
 				</ul>
 			</nav>
 		</div>
-		<div style="margin-top: 20px;position: relative;">
-			<button id="cancel-select" class="btn" style="position: absolute;left: 50%;transform: translate(-50%,0);">取消</button>
-		</div>
+		<button id="cancel-select" class="btn" style="position: absolute;left:
+			50%;transform: translate(-50%,0);">取消</button>
+
 	</div>
 
 	<script>
@@ -357,12 +362,6 @@
                 height: b
 						});
 
-						//初始化暗幕高度
-						var h2=$("#one-all")[0].scrollHeight
-						/* 暗幕高度 */
-						$("#dark-full").css({
-							height:h2
-						})
 
 						//疾病表单中的取消键
 						$("#cancel-select").click(function(){
@@ -373,7 +372,6 @@
 				//切换显示疾病弹窗
 				function toggleDisease(a) {
 					// a用来接收是中医还是西医
-					$("#dark-full").toggle();
 					$("#diease").slideToggle("slow");
 				}
     </script>

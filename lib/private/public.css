@@ -29,6 +29,26 @@
 	font-size: 15px;
 	line-height: 25px;
 }
+.border-line-right{
+	border-style: solid;
+	border-color: #ddd;
+	border-width: 1px;
+	border-radius: 4px 4px 4px 4px;
+	border-top: none;
+	border-left: none;
+	font-size: 15px;
+	line-height: 25px;
+}
+.border-line-left{
+	border-style: solid;
+	border-color: #ddd;
+	border-width: 1px;
+	border-radius: 4px 4px 4px 4px;
+	border-top: none;
+	border-right: none;
+	font-size: 15px;
+	line-height: 25px;
+}
 .center-center{
 	position: absolute;
 	top: 100%;
