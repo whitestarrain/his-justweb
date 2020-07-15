@@ -21,6 +21,7 @@
 	</head>
 	<body>
 		<div
+			id="one-all"
 			style="position: relative;
 			padding: 10px;
 			border-top: none;
@@ -46,8 +47,9 @@
 			</div>
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-sm-2 text-primary highlight text-center"
-						style="background-color:#EEF6FE;line-height: 30px;">
+					<div
+						class="col-sm-2 text-primary highlight text-center"
+						style="background-color: #eef6fe; line-height: 30px;">
 						病历内容:
 					</div>
 				</div>
@@ -58,57 +60,85 @@
 					<div class="form-group">
 						<label for="inputEmail3" class="col-sm-1 control-label">主诉</label>
 						<div class="col-sm-11">
-							<input type="text" class="form-control" id="inputEmail3"
-								placeholder="主诉">
+							<input
+								type="text"
+								class="form-control"
+								id="inputEmail3"
+								placeholder="主诉"
+								/>
 						</div>
 					</div>
 					<div class="form-group">
 						<label class="col-sm-1 control-label">现病史</label>
 						<div class="col-sm-11">
-							<textarea class="form-control" rows="3" placeholder="现病史"></textarea>
+							<textarea
+								class="form-control"
+								rows="3"
+								placeholder="现病史"></textarea>
 						</div>
 					</div>
 					<div class="form-group">
 						<label class="col-sm-1 control-label">现病治疗情况</label>
 						<div class="col-sm-11">
-							<textarea class="form-control" rows="3" placeholder="现病治疗情况"></textarea>
+							<textarea
+								class="form-control"
+								rows="3"
+								placeholder="现病治疗情况"></textarea>
 						</div>
 					</div>
 					<div class="form-group">
 						<label class="col-sm-1 control-label">既往史</label>
 						<div class="col-sm-11">
-							<textarea class="form-control" rows="3" placeholder="既往史"></textarea>
+							<textarea
+								class="form-control"
+								rows="3"
+								placeholder="既往史"></textarea>
 						</div>
 					</div>
 					<div class="form-group">
 						<label class="col-sm-1 control-label">过敏史</label>
 						<div class="col-sm-11">
-							<textarea class="form-control" rows="3" placeholder="过敏史"></textarea>
+							<textarea
+								class="form-control"
+								rows="3"
+								placeholder="过敏史"></textarea>
 						</div>
 					</div>
 					<div class="form-group">
 						<label class="col-sm-1 control-label">体格检查</label>
 						<div class="col-sm-11">
-							<textarea class="form-control" rows="2" placeholder="体格检查"></textarea>
+							<textarea
+								class="form-control"
+								rows="2"
+								placeholder="体格检查"></textarea>
 						</div>
 					</div>
 					<div class="container-fluid">
 						<div class="row">
-							<div class="col-sm-2 text-primary highlight text-center"
-								style="background-color:#EEF6FE;line-height: 30px;margin-bottom: 5px;">
+							<div
+								class="col-sm-2 text-primary highlight text-center"
+								style="background-color: #eef6fe;
+								line-height: 30px;
+								margin-bottom: 5px;">
 								评估/诊断:
 							</div>
 						</div>
 					</div>
-					<div class="shadow padding-medium" style="margin-bottom: 5px;">
+					<div
+						class="shadow padding-medium"
+						style="margin-bottom: 5px;">
 						<div class="container-fluid">
 							<div class="row">
-								<div class="col-sm-2 text-info" style="font-size: medium;">西医诊断</div>
+								<div
+									class="col-sm-2 text-info"
+									style="font-size: medium;">
+									西医诊断
+								</div>
 								<div class="col-sm-8"></div>
 								<div class="col-sm-2">
 									<a href="">删除</a>
 									<span>/</span>
-									<a href="">增加</a>
+									<a href="javascript:toggleDisease(2)">增加</a>
 								</div>
 							</div>
 						</div>
@@ -116,7 +146,9 @@
 							<table class="table table-hover text-center">
 								<tr style="font-weight: 600;">
 									<td class="col-sm-1">
-										<div class="checkbox"><input type="checkbox"></div>
+										<div class="checkbox">
+											<input type="checkbox" />
+										</div>
 									</td>
 									<td class="col-sm-1">ICD编码</td>
 									<td class="col-sm-1">名称</td>
@@ -125,7 +157,9 @@
 								</tr>
 								<tr>
 									<td class="col-sm-1">
-										<div class="checkbox"><input type="checkbox"></div>
+										<div class="checkbox">
+											<input type="checkbox" />
+										</div>
 									</td>
 									<td class="col-sm-1">11111</td>
 									<td class="col-sm-1">1111</td>
@@ -134,7 +168,9 @@
 								</tr>
 								<tr>
 									<td class="col-sm-1">
-										<div class="checkbox"><input type="checkbox"></div>
+										<div class="checkbox">
+											<input type="checkbox" />
+										</div>
 									</td>
 									<td class="col-sm-1">11111</td>
 									<td class="col-sm-1">1111</td>
@@ -143,7 +179,9 @@
 								</tr>
 								<tr>
 									<td class="col-sm-1">
-										<div class="checkbox"><input type="checkbox"></div>
+										<div class="checkbox">
+											<input type="checkbox" />
+										</div>
 									</td>
 									<td class="col-sm-1">11111</td>
 									<td class="col-sm-1">1111</td>
@@ -156,12 +194,16 @@
 					<div class="shadow padding-medium">
 						<div class="container-fluid">
 							<div class="row">
-								<div class="col-sm-2 text-info" style="font-size: medium;">中医诊断</div>
+								<div
+									class="col-sm-2 text-info"
+									style="font-size: medium;">
+									中医诊断
+								</div>
 								<div class="col-sm-8"></div>
 								<div class="col-sm-2">
 									<a href="">删除</a>
 									<span>/</span>
-									<a href="">增加</a>
+									<a href="javascript:toggleDisease(1)">增加</a>
 								</div>
 							</div>
 						</div>
@@ -169,7 +211,9 @@
 							<table class="table table-hover text-center">
 								<tr style="font-weight: 600;">
 									<td class="col-sm-1">
-										<div class="checkbox"><input type="checkbox"></div>
+										<div class="checkbox">
+											<input type="checkbox" />
+										</div>
 									</td>
 									<td class="col-sm-1">ICD编码</td>
 									<td class="col-sm-1">名称</td>
@@ -178,7 +222,9 @@
 								</tr>
 								<tr>
 									<td class="col-sm-1">
-										<div class="checkbox"><input type="checkbox"></div>
+										<div class="checkbox">
+											<input type="checkbox" />
+										</div>
 									</td>
 									<td class="col-sm-1">11111</td>
 									<td class="col-sm-1">1111</td>
@@ -187,7 +233,9 @@
 								</tr>
 								<tr>
 									<td class="col-sm-1">
-										<div class="checkbox"><input type="checkbox"></div>
+										<div class="checkbox">
+											<input type="checkbox" />
+										</div>
 									</td>
 									<td class="col-sm-1">11111</td>
 									<td class="col-sm-1">1111</td>
@@ -196,7 +244,9 @@
 								</tr>
 								<tr>
 									<td class="col-sm-1">
-										<div class="checkbox"><input type="checkbox"></div>
+										<div class="checkbox">
+											<input type="checkbox" />
+										</div>
 									</td>
 									<td class="col-sm-1">11111</td>
 									<td class="col-sm-1">1111</td>
@@ -206,20 +256,125 @@
 							</table>
 						</div>
 					</div>
-
 				</form>
 			</div>
 		</div>
 	</body>
+
+	<!-- 暗幕 -->
+	<div id="dark-full" class="full-dark" style="display: none;" ></div>
+
+	<!-- 弹出疾病选择框 -->
+	<div
+		id="diease"
+		class="center-center shadow border-line"
+		style="width: 800px; height: 500px; background-color:#FFFFFF;display: none;padding: 30px 20px 0px;">
+		<form class="form-inline" style="width: 70%; position: relative; left: 50%;transform: translate(-50%,0);margin-bottom: 20px;">
+			<div class="form-group">
+				<input type="text" class="form-control" id="inputPassword2" placeholder="疾病种类">
+			</div>
+			<div class="form-group">
+				<input type="text" class="form-control " id="inputPassword3" placeholder="疾病名称">
+			</div>
+			<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+		</form>
+		<div class="container-fluid">
+			<table class="table table-hover text-center">
+				<tr style="font-weight: 600;">
+					<td class="col-sm-1">ICD编码</td>
+					<td class="col-sm-1">名称</td>
+					<td class="col-sm-1">类型</td>
+					<td class="col-sm-6"></td>
+					<td class="col-sm-2">发病时间</td>
+					<td class="col-sm-1">操作</td>
+				</tr>
+				<tr>
+					<td class="col-sm-1">111</td>
+					<td class="col-sm-1">111</td>
+					<td class="col-sm-1">111</td>
+					<td class="col-sm-6"></td>
+					<td class="col-sm-2"><input type="date"></td>
+					<td class="col-sm-1"><a href="" class="btn btn-primary">选择</a></td>
+				</tr>
+				<tr>
+					<td class="col-sm-1">111</td>
+					<td class="col-sm-1">111</td>
+					<td class="col-sm-1">111</td>
+					<td class="col-sm-6"></td>
+					<td class="col-sm-2"><input type="date"></td>
+					<td class="col-sm-1"><a href="" class="btn btn-primary">选择</a></td>
+				</tr>
+				<tr>
+					<td class="col-sm-1">111</td>
+					<td class="col-sm-1">111</td>
+					<td class="col-sm-1">111</td>
+					<td class="col-sm-6"></td>
+					<td class="col-sm-2"><input type="date"></td>
+					<td class="col-sm-1"><a href="" class="btn btn-primary">选择</a></td>
+				</tr>
+				<tr>
+					<td class="col-sm-1">111</td>
+					<td class="col-sm-1">111</td>
+					<td class="col-sm-1">111</td>
+					<td class="col-sm-6"></td>
+					<td class="col-sm-2"><input type="date"></td>
+					<td class="col-sm-1"><a href="" class="btn btn-primary">选择</a></td>
+				</tr>
+			</table>
+		</div>
+		<div>
+			<nav aria-label="Page navigation">
+				<ul class="pagination">
+					<li>
+						<a href="#" aria-label="Previous">
+							<span aria-hidden="true">&laquo;</span>
+						</a>
+					</li>
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li>
+						<a href="#" aria-label="Next">
+							<span aria-hidden="true">&raquo;</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div style="margin-top: 20px;position: relative;">
+			<button id="cancel-select" class="btn" style="position: absolute;left: 50%;transform: translate(-50%,0);">取消</button>
+		</div>
+	</div>
+
 	<script>
+				// 初始化
+        $(function () {
+						var b = window.innerHeight;
+						/* body高度 */
+            $("body").css({
+                height: b
+						});
 
-		$(function() {
-			var b= window.innerHeight
-			$("body").css({
-				height:b
-			}
-			)
-		})
-	</script>
+						//初始化暗幕高度
+						var h2=$("#one-all")[0].scrollHeight
+						/* 暗幕高度 */
+						$("#dark-full").css({
+							height:h2
+						})
 
+						//疾病表单中的取消键
+						$("#cancel-select").click(function(){
+							toggleDisease();
+						})
+				});
+
+				//切换显示疾病弹窗
+				function toggleDisease(a) {
+					// a用来接收是中医还是西医
+					$("#dark-full").toggle();
+					$("#diease").slideToggle("slow");
+				}
+    </script>
 </html>
