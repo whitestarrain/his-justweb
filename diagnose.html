@@ -14,6 +14,7 @@
 		<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
 		<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="./lib/private/public.css">
+		<script src="./lib/private/diagnoseUpTo.js"></script>
 
 	</head>
 	<body>
@@ -93,17 +94,17 @@
 				</div>
 			</div>
 			<div id="right-part" class="border-line" style="margin-right: 5px;">
-				<div class="container-fluid" style="padding: 0px;">
+				<div id="patient-info" class="container-fluid" style="padding: 0px; margin: 5px">
 					<div class="col-md-2" style="padding: 0;">
 						<button class="btn btn-primary">
 							隐藏患者栏
 						</button>
 					</div>
-					<span class="text-info" style="font-size: 18px; line-height: 33px;">患者姓名：XXX</span>
+					<span class="text-info" style="font-size: 14px; line-height: 33px;">患者姓名：XXX，病历号：XX，年龄：XX，性别：X</span>
 				</div>
 				<div id="right-up-part">
 					<ul class="nav nav-tabs">
-						<li role="presentation" class="active"><a href="#" style="padding-right: 18px;padding-left: 19px;">病历首页</a></li>
+						<li role="presentation" class="active"><a href="javascript:diagnose_medicalReocrd_UpTo()" style="padding-right: 18px;padding-left: 19px;">病历首页</a></li>
 						<li role="presentation"><a href="#">检查申请</a></li>
 						<li role="presentation"><a href="#">检验申请*</a></li>
 						<li role="presentation"><a href="#">门诊确诊*</a></li>
@@ -114,12 +115,24 @@
 					</ul>
 				</div>
 
-				<div id="right-down-part" style="height: 590px;">
-					<iframe src="MedicalRecord.html" style="height: 100%; width: 100%; border: none;"></iframe>
+				<div id="right-down-part">
+					<iframe id="diagnoseIframe" src="MedicalRecord.html" style="height: 100%; width: 100%; border: none;"></iframe>
 				</div>
 			</div>
 
 		</div>
-
 	</body>
+	<script>
+		$(function(){
+			var h=window.innerHeight
+			$("#right-part").css({
+				height:h*0.92
+			})
+			console.log(h)
+			$("#right-down-part").css({
+				height:h*0.77
+			})
+			
+		})
+	</script>
 </html>

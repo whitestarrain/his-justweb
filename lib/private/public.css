@@ -18,3 +18,14 @@
 .padding-medium{
 	padding: 10px;
 }
+.border-line-bottom{
+	border-style: solid;
+	border-color: #ddd;
+	border-width: 1px;
+	border-radius: 4px 4px 4px 4px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	font-size: 15px;
+	line-height: 25px;
+}

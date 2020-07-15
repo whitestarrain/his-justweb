@@ -154,7 +154,7 @@
 				</dl>
 			</div>
 		</aside>
-		<div style="height: 730px;width: 86%;position: relative;left: 14%;">
+		<div id="framediv" style="height: 730px;width: 86%;position: relative;left: 14%;overflow: hidden;">
 			<iframe id="rightcontent" src="./diagnose.html" height="100%" width="100%"
 				style="border: none;">
 
@@ -167,10 +167,17 @@
 	<!--/_footer 作为公共模版分离出去-->
 
 	<!--请在下方写此页面业务相关的脚本-->
-	<script type="text/javascript" src="./lib/private/upto.js"></script>
+	<script type="text/javascript" src="./lib/private/indexUpTo.js"></script>
 	<script type="text/javascript">
 		$(function() {
-
+			var d =window.innerHeight
+			console.dir(d);
+			$("#framediv").css({
+				height:d*0.92
+			})
+			$("header>nav").css({
+				height:d*0.06
+			})
 		});
 	</script>
 </html>
