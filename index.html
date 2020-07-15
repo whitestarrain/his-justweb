@@ -79,7 +79,7 @@
 						<ul>
 							<li><a href="javascript:toRegister()">现场挂号</a></li>
 							<li><a href="javascript:toQuitRegister()">退号</a></li>
-							<li><a href="javascript:void(0)">收费</a></li>
+							<li><a href="javascript:toPayfee()">收费</a></li>
 							<li><a href="javascript:void(0)">退费</a></li>
 							<li><a href="javascript:void(0)">发票补打</a></li>
 							<li><a href="javascript:void(0)">发票重打</a></li>
@@ -155,7 +155,7 @@
 			</div>
 		</aside>
 		<div id="framediv" style="height: 730px;width: 86%;position: relative;left: 14%;overflow: hidden;">
-			<iframe id="rightcontent" src="./diagnose.html" height="100%" width="100%"
+			<iframe id="rightcontent" src="./payfee.html" height="100%" width="100%"
 				style="border: none;">
 
 			</iframe>
@@ -172,7 +172,7 @@
 		$(function() {
 			var d =window.innerHeight
 			$("#framediv").css({
-				height:d*0.92
+				height:d*0.93
 			})
 			$("header>nav").css({
 				height:d*0.06
