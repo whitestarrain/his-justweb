@@ -13,20 +13,22 @@
 
 		<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
 		<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
-		
+
 		<script src="./lib/vue/vue.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="./lib/vue/axios.min.js" type="text/javascript" charset="utf-8"></script>
-		
+
+		<!-- 消息提示插件 -->
+		<link rel="stylesheet" href="./lib/toastr/toastr.min.css">
 		<style type="text/css">
-			.container{
+			.container {
 				font-size: 17px;
 				line-height: 35px;
 			}
-			.highlight-bar{
+
+			.highlight-bar {
 				background-color: #F7F7F9;
 				border-radius: 3px 3px 3px 3px;
 				overflow: auto;
-				margin: 0px 20px 0px;
 				height: 40px;
 			}
 		</style>
@@ -61,10 +63,10 @@
 				<button type="submit" class="btn btn-primary col-md-1"><span class="glyphicon glyphicon-search"></span> 查询</button>
 			</div>
 		</div>
-		<div class="highlight-bar">
-			<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-ok" style="margin-top: 5px;"></span>发药</button>
-		</div>
 		<div id="drug-pee-table" style="margin: 0px 20px 0px;">
+			<div class="highlight-bar" style="padding-top: 4px;">
+				<button type="button" @click="confirm()" class="btn btn-primary"><span class="glyphicon glyphicon-ok"></span>发药</button>
+			</div>
 			<table class="table table-hover">
 				<tr>
 					<td><input type="checkbox" name="" id="" value="" /></td>
@@ -89,41 +91,10 @@
 			</table>
 		</div>
 	</body>
-	<script type="text/javascript">
-		new Vue({
-			el:"#drug-pee-table",
-			data:{
-				drugs:[
-					{
-						drugName:"药品1",
-						price:20,
-						number:2,
-						status:3,
-						doctor:"华佗",
-						presName:"处方1",
-						openDate:"2000-01-01"
-					},
-					{
-						drugName:"药品1",
-						price:20,
-						number:2,
-						status:3,
-						doctor:"华佗",
-						presName:"处方1",
-						openDate:"2000-01-01"
-					},
-					{
-						drugName:"药品1",
-						price:20,
-						number:2,
-						status:3,
-						doctor:"华佗",
-						presName:"处方1",
-						openDate:"2000-01-01"
-					}
-				]
-			}
-			
-		})
-	</script>
+	<link rel="stylesheet" href="./lib/popup/css/htmleaf-demo.css">
+	<link rel="stylesheet" href="./lib/popup/css/normalize.css">
+	<link rel="stylesheet" href="./lib/popup/css/popup.css">
+	<script src="./lib/popup/js/popup.js"></script>
+	<script src="./lib/toastr/toastr.min.js"></script>
+	<script src="./lib/private/distribute_drug.js" type="text/javascript" charset="utf-8"></script>
 </html>
